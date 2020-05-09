@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz game</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="quiz-container hide">
+            <div class="question-number">
+                <h3>Question <span class="question-num-value"> </span> of 5</h3>
+            </div>
+            
+            <div id="question">
+                Why Lorem ipsum dolor sit amet?
+            </div>
+            <div class ="options">
+                <div class="optionA" id="0" onclick="check(this)"></div>
+                <div class="optionB" id="1" onclick="check(this)"></div>
+                <div class="optionC" id="2" onclick="check(this)"></div>
+            </div>
+            <div class="next">
+                <button class="btn" id="next-btn">NEXT</button>
+            </div>
+            
+            <div class="score-trackers"></div>
+        </div>    
+
+    <div class="start-container">
+        <button class= "btn" id="start-btn">START QUIZ</button>    
+    </div>
+          
+    <div class="game-over box hide">
+        <h1>GOOD TRY! <br> You got <span class="final-score"></span>out of 5 answers correct.</h1> 
+        <button class="btn" id="start-btn" onclick="tryAgain()">TRY AGAIN</button>       
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

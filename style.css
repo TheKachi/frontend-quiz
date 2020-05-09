@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+
+.quiz-container {
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 600px;
+    min-height: 500px;
+    margin: 40px auto;
+    padding: 10px 30px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.question-number h3 {
+    /* color: #009688; */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.question {
+    font-size: 22px;
+    color: #000;
+    padding: 20px; 
+}
+
+.options div {
+    background-color: rgb(153, 151, 151);
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.options div.correct {
+    color: #fff;
+    background-color: green;
+}
+
+.options div.wrong {
+    color: #fff;
+    background-color: red;
+}
+
+.options div.disabled {
+    pointer-events: none;
+}
+
+.btn{
+    border-radius: 5px;
+    background-color: rgb(252, 149, 6);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    margin: 15px 0 20px;
+}
+
+#start-btn 
+ {
+    padding: 15px 25px;
+}
+
+#next-btn {
+    padding: 10px 15px;
+}
+
+.hide {
+    display: none;
+}
+.score-trackers {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+.score-trackers div {
+    display: inline-block;
+    background-color: #ccc;
+     border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.score-trackers div.correct {
+    background-color: green;
+    background-image: url('img/correct.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.score-trackers div.wrong {
+    background-color: red;
+    background-image: url('img/wrong.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+/* 
+.game-over {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-over .box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 700px;
+    flex-basis: 700px;
+} */
+.start-container, .game-over {
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 50%;
+    height: 100%;
+    margin: 60px auto;
+    padding: 10px 30px;
+    box-shadow: 0 0 10px 2px;
+}
+#start-btn {
+    margin: 60px;
+}
