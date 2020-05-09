@@ -20,28 +20,37 @@ let myArr=[];
 
 const questions = [
     {
-        question: "WHo invented A?",
-        options: [ "que", "amet", "quart" ],
+        question: "What are the technical and additional skills that are needed to be a front-end developer?",
+        options: [ "HTML, CSS Javascript", "Joomla, CSS, CMS", "Java, JavaScript, Ruby" ],
         answer: 0   
     }, 
     {
-        question: "WHo invented B?",
-        options: ["un", "deux", "trois"],
+        question: "How do you deal with browser-specific style incompatibility?",
+
+        options: ["to utilize a for loop in the body tag of your HTML to recognize the browser and load an external stylesheet",
+        "to utilize a conditional statement in the head tag of your HTML to recognize the browser and load an external stylesheet",
+        "to utilize a function statement in the head tag of your HTML to recognize the browser and load an inline stylesheet",],
         answer: 1
     }, 
     {
-        question: "WHo invented C?",
-        options: ["lorem", "ipsum", "dolor"],
+        question: "When would you utilize CSS float?",
+        options: ["when you need to make an element of your web page be pushed to the center and make other elements cover around it.", 
+         "when you need to make an element of your web page be pushed to the top and bottom and make other elements cover around it.",
+         "when you need to make an element of your web page be pushed to the right or left and make other elements cover around it."],
         answer: 2
     }, 
     {
-        question: "WHo invented BB?",
-        options: ["Her", "She", "They"],
+        question: "How would you center a div?",
+        options: ["By setting a height and setting margin to 50%",
+        "By setting a width and setting margin to auto",
+        "By setting a width and setting padding to auto "],
         answer: 1
     }, 
     {
-        question: "WHo invented AA?",
-        options: ["Me", "You", "Them"],
+        question: "What is the difference between classes and IDs?",
+        options: ["The id's are commonly used to style elements that only look once on a page, classes are utilized to style different elements in the same fashion",
+            "The classes are commonly used to style elements that only look once on a page, id's are utilized to style different elements in the same fashion", 
+          "The classes are used to style the page while id's are used to select the element"],
         answer: 0
     }
 ]
