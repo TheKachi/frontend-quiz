@@ -83,6 +83,7 @@ function shuffleQuestions(){
         console.log('gameover');
         quizContainerElement.classList.add('hide');
         gameOver.classList.remove('hide');
+        displayScore();
         //gameOver();
     } else {
         if(myArray.length>0) {
@@ -123,6 +124,7 @@ function check(element) {
         element.classList.add('correct');
         updateScoreTracker('correct');
         score++;
+        console.log(score);
         
     } else {
         element.classList.add('wrong');
@@ -177,3 +179,7 @@ function nextQuestion() {
     }
 }
 
+function displayScore() {
+    finalScore.innerHTML=score;
+
+}
