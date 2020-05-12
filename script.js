@@ -1,6 +1,7 @@
 // elements
 const startButton = document.querySelector('#start-btn');
 const nextButton = document.querySelector('#next-btn');
+const tryAgainButton = document.querySelector('.try-again-btn')
 const quizContainerElement = document.querySelector('.quiz-container');
 const questionNumber = document.querySelector('.question-num-value');
 const questionElement = document.querySelector('#question');
@@ -59,9 +60,12 @@ startButton.addEventListener('click', startGame);
 
 nextButton.addEventListener('click', nextQuestion);
 
+// tryAgainButton.addEventListener('click', replay);
+
 // START GAME
 function startGame() {
     startButton.classList.add('hide');
+
     quizContainerElement.classList.remove('hide');
 }
 
@@ -84,6 +88,7 @@ function shuffleQuestions(){
         quizContainerElement.classList.add('hide');
         gameOver.classList.remove('hide');
         displayScore();
+        //replay();
         //gameOver();
     } else {
         if(myArray.length>0) {
@@ -181,5 +186,9 @@ function nextQuestion() {
 
 function displayScore() {
     finalScore.innerHTML=score;
+}
 
+function replay() {
+    gameOver.classList.add('hide');
+startGame();
 }
